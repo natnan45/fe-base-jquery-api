@@ -56,4 +56,8 @@
 
   ...
 
-### 低层接口
+### 接口
+
+#### ajax();
+
+#### get();post();load();getJson();getScript();
