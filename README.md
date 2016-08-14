@@ -59,5 +59,20 @@
 ### 接口
 
 #### ajax();
-
+   ...
 #### get();post();load();getJson();getScript();
+   ...
+
+
+
+## Attribute
+#### html()
+ (1) 获取匹配的一组元素的第一个元素的内容；设置匹配一组元素的内容;
+
+ (2) 设置参数可以是一个htmlStirng,或者一个function;
+
+#### addClass()
+ (1) 空格分割，添加多个class,或者使用removeClass删除多个;
+
+ (2) 参数为function,接受一个元素的index,和currentClass;
+
