@@ -76,3 +76,20 @@
 
  (2) 参数为function,接受一个元素的index,和currentClass;
 
+#### attr()
+ (1) attr(attributeName)获取属性值，匹配一组元素中的第一个元素，如果需要多个，使用each()或map();
+ 
+ (2) attr()与prop()的区别，attr静态的获取属性,prop获取动态特性，比如selected,checked等;
+ 
+ (3) attr(attributeName,value)，attr(obj),attr(attributeName,function(index,attr))设置属性的值;
+     注意其中function中的this引用;
+
+#### data()
+ (1) 设置值:data(key,value),value可以是除了undefined任意类型;
+     data(obj),直接设置一个对象。
+     
+ (2) 获取值:data(key)或data();
+ 
+ (3) 目前不提供跨浏览器支持，注意IE低版本不支持元素附加属性
+ 
+ (4) \<div data-role="page" data-last-value="43"\>\</div\>,data-last-value会被解析成lastValue的key值
