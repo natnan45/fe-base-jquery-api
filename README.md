@@ -75,4 +75,3 @@
  (1) 空格分割，添加多个class,或者使用removeClass删除多个;
 
  (2) 参数为function,接受一个元素的index,和currentClass;
-
