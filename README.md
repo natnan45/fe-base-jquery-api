@@ -117,4 +117,28 @@
  (4)\<div data-role="page" data-last-value="43"\>\</div\>,data-last-value会被解析成lastValue的key值
 
 ## core
- 
+#### jquery()
+ jquery(selector[,context]);
+
+ jquery(element)
+
+ jquery(elementArray)
+
+ jquery(object)
+
+ jquery(selection)
+
+ jquery()
+
+ jquery(html[,attributes])
+
+#### jQuery.noConflict
+ 删除jquery对别名$的使用，使用jQuery;
+ 或者取一个新别名，比如q=jQuery.noConflict();
+
+
+
+## 小蜜蜂
+ - .filter()
+ - .not()
+ - .appendTo()
