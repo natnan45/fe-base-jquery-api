@@ -136,7 +136,10 @@
  删除jquery对别名$的使用，使用jQuery;
  或者取一个新别名，比如q=jQuery.noConflict();
 
-
+## Deferred
+ #### diferred.alwarys()
+ #### diferred.done();
+ #### diferred.fail();
 
 ## 小蜜蜂
  - .filter()
