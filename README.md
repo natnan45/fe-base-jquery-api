@@ -138,6 +138,7 @@
  或者取一个新别名，比如q=jQuery.noConflict();
 
 ## Deferred
+#### jQuery.Deferred()
 #### diferred.alwarys()
 #### diferred.done();
 #### diferred.fail();
@@ -146,6 +147,16 @@
 #### jQuery.Callbacks()
   多功能回调数组，提供一种强大的方式管理回调数组；
   这个function再内部使用，给$.ajax()和$.Deferred提供基础的功能；
+
+  - callbacks.add()
+  - callbacks.empty()
+  - callbacks.fire() / callbacks.fired()
+  - callbacks.fireWidth()
+  - callbacks.remove()
+  - callbacks.disable() / callbacks.disabled()
+  - callbacks.lock() / callbacks.locked()
+  - callbacks.has()
+  - callbacks.remove()
 
 ## 小蜜蜂
  - .filter()
