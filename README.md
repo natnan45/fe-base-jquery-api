@@ -63,7 +63,8 @@
 #### get();post();load();getJson();getScript();
    ...
 
-
+#### 遗留
+-jsoup原理；
 
 ## Attribute
 #### html()
@@ -137,9 +138,14 @@
  或者取一个新别名，比如q=jQuery.noConflict();
 
 ## Deferred
- #### diferred.alwarys()
- #### diferred.done();
- #### diferred.fail();
+#### diferred.alwarys()
+#### diferred.done();
+#### diferred.fail();
+ 
+## Callbacks Object (v1.7)
+#### jQuery.Callbacks()
+  多功能回调数组，提供一种强大的方式管理回调数组；
+  这个function再内部使用，给$.ajax()和$.Deferred提供基础的功能；
 
 ## 小蜜蜂
  - .filter()
