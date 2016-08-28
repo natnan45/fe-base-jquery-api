@@ -65,6 +65,13 @@
     $('body').append($('<div>').text("clientWidth:" + $('#wrap')[0].clientWidth + 'clientHeight:' + $('#wrap')[0].clientHeight));
 
     $('body').append($('<div>').text("scrollWidth:" + $('#wrap')[0].scrollWidth + 'scrollHeight:' + $('#wrap')[0].scrollHeight));
+
+    var pops = $($second).position();
+    $('body').append($('<div>').text("position() left:" + pops.left + 'top:' + pops.top));
+
+    $('#wrap').scrollLeft(200);
+    $('#wrap').scrollTop(201);
+    $('body').append($('<div>').text("scrollLeft/scrollTop() left:" + $('#wrap').scrollLeft() + 'top:' + $('#wrap').scrollTop()));
 </script>
 </body>
 </html>

@@ -132,18 +132,19 @@
   - css(propertyName,'')会删除改css;
   - 从1.8开始，css()会自动添加属性前瞻，比如-moz-user-select;
   - 1.6开始，css()支持设置动态值，比如css('padding-left',"+=15")
-  
+
 #### width() / innerWidth() / outerWidth()
-  
+
 #### height() / innerHeight() / outerHeight()
   - heigth()获取内容的高度
   - innerHeight()获取内容+padding的高度
   - outerHeight()获取内容+padding+border的高度/outerHeight(true)获取内容+padding+border+margin的高度
- 
+
 #### offset() / position() / scrollLeft() / scrollTop()
   - offset()是相对document的位置;
-  - position()是相对offset Parent的位置;
-  
+  - position()是相对offset Parent的位置;只包含外层元素的padding
+  - scrollLeft() 获取或设置元素水平滚动条的坐标
+  - scrollTop() 获取或设置元素垂直滚动条的坐标
 ## core
 #### jquery()
  jquery(selector[,context]);
@@ -163,6 +164,11 @@
 #### jQuery.noConflict
  删除jquery对别名$的使用，使用jQuery;
  或者取一个新别名，比如q=jQuery.noConflict();
+
+## Data
+ - data() / removeData()
+ - .queue() / .dequeue() /.clearQueue
+ - jquery.queue() / jquery.dequeue /jquery.removeData()
 
 ## Deferred
 #### jQuery.Deferred()
