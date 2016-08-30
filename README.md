@@ -191,6 +191,19 @@
   - callbacks.has()
   - callbacks.remove()
 
+## Effects
+ #### Basics
+ - hide()/show()/toggle()
+ #### Custom
+ - animate()
+ - queue() / dequeue() / stop() / finish() / clearQueue() / delay()
+
+ #### Fading
+ - fadeIn() / fadeOut() / fadeTo() / fadeToggle()
+
+ #### Sliding
+ - slideDown() / slideUp() / slideToggle()
+
 ## –°√€∑‰
  - .filter()
  - .not()
