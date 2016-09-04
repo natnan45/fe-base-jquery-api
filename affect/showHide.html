@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button id="show">Show it</button>
+    <button id="hide">hide it</button>
+    <p style="display:none">Hello 2</p>
+</div>
+
+<div>
+    <button id="toggle">toggle it</button>
+    <p class="toggle-p">Hello toggle</p>
+</div>
+<script src="../vendor/jquery-3.1.0.js"></script>
+<script>
+    $('#show').on('click', function () {
+        $('p').show('slow');
+    });
+
+    $('#hide').on('click', function () {
+        $('p').hide('slow');
+    });
+
+    $('#toggle').on('click', function () {
+        $(this).next().toggle(400, 'linear');
+    });
+</script>
+</body>
+</html>

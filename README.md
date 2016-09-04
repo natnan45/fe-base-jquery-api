@@ -170,6 +170,8 @@
  - .queue() / .dequeue() /.clearQueue
  - jquery.queue() / jquery.dequeue /jquery.removeData()
 
+ 提供了全局一套和元素一套；一个是对元素行为的设置queue,一个是对元素数据的设置data
+
 ## Deferred
 #### jQuery.Deferred()
 #### diferred.alwarys()
@@ -194,18 +196,41 @@
 ## Effects
  #### Basics
  - hide()/show()/toggle()
+ ```
+  hide/show/toggle([duration][,easing][,complete]);
+
+  hide/show/toggle(options);
+
+  toggle(true/false);
+ ```
  #### Custom
  - animate()
  - queue() / dequeue() / stop() / finish() / clearQueue() / delay()
 
  #### Fading
  - fadeIn() / fadeOut() / fadeTo() / fadeToggle()
+ ```
+ fadeIn/fadeOut/fadeToggle([duration][,easing][,complete]);
+
+ fadeIn/fadeOut/fadeToggle(options);
+
+ fadeTo(duration,opacity[,easing][,complete])
+
+ duration参数 不设置，默认是400
+ ```
 
  #### Sliding
  - slideDown() / slideUp() / slideToggle()
+  ```
+  slideDown/slideUp/slideToggle([duration][,easing][,complete]);
+
+  slideDown/slideUp/slideToggle(options);
+
+  duration参数 不设置，默认是400
+  ```
 
 ## Event
- 
+
 
 ## 小蜜蜂
  - .filter()
@@ -213,3 +238,4 @@
  - .first()
  - .appendTo()
  - parseFloat() / parseInt()
+ - :hidden

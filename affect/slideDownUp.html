@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            background: #de9a44;
+            margin: 3px;
+            width: 80px;
+            height: 40px;
+            display: none;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+Click me!
+<div></div>
+<div></div>
+<div></div>
+<script src="../vendor/jquery-3.1.0.js"></script>
+<script>
+    $(document.body).click(function () {
+        if ($("div:first").is(":hidden")) {
+            $("div").slideDown();
+        } else {
+            $("div").slideUp();
+        }
+    });
+</script>
+</body>
+</html>
